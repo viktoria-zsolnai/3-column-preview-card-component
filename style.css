@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&display=swap');
 
 :root {
     /* primary */
@@ -18,20 +16,20 @@ body {
     font-size: 15px;
 }
 
-
 .wrapper {
     display: flex;
     justify-content:center;
     align-items:center;
+    width: auto;
+    height: 900px;
 }
 
 .content {
     display: flex;
     flex-direction: row;
     width: 950px;
-    height: 550px;
+    height: 540px;
     margin: 200px;
-    
 }
 
 .content h1 {
@@ -39,30 +37,33 @@ body {
     text-transform: uppercase;
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 40px;
+    font-weight: 700;
 
 }
 
 .content p {
     color: var(--transparent-white);
     font-family: "Lexend Deca", sans-serif;
-    font-weight: 200 !important;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height: 20px;
-    
+    line-height: 30px;
 }
 
 .col-1 {
     display: flex;
     flex-direction: column;
+    min-width: 0;
     width: 33,3%;
     background-color: var(--bright-orange);
     padding: 60px;
     border-radius: 10px 0px 0px 10px;
+    
 }
 
 .col-2 {
     display: flex;
     flex-direction: column;
+    min-width: 0;
     width: 33,3%;
     background-color: var(--dark-cyan);
     padding: 60px;
@@ -71,6 +72,7 @@ body {
 .col-3 {
     display: flex;
     flex-direction: column;
+    min-width: 0;
     width: 33,3%;
     background-color: var(--very-dark-cyan);
     padding: 60px;
@@ -80,4 +82,101 @@ body {
 img {
     width: 60px;
     height: auto;
+}
+
+.col-1 button {
+    display: block;
+    padding: 12px;
+    width: 75%;
+    margin: 60px 20px 0px 0px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--bright-orange);
+    background-color: var(--very-light-gray);
+    border: 2px var(--very-light-gray) solid;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.col-2 button {
+    display: block;
+    padding: 12px;
+    width: 75%;
+    margin: 60px 20px 0px 0px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--dark-cyan);
+    background-color: var(--very-light-gray);
+    border: 2px var(--very-light-gray) solid;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.col-3 button {
+    display: block;
+    padding: 12px;
+    width: 75%;
+    margin: 60px 20px 0px 0px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--very-dark-cyan);
+    background-color: var(--very-light-gray);
+    border: 2px var(--very-light-gray) solid;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.col-1 button:hover {
+    color: var(--very-light-gray);
+    background-color: var(--bright-orange);
+}
+
+.col-2 button:hover {
+    color: var(--very-light-gray);
+    background-color: var(--dark-cyan);
+}
+
+.col-3 button:hover {
+    color: var(--very-light-gray);
+    background-color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        margin: 100px 25px 100px 25px;
+    }
+
+    .col-1 {
+        width: 33,3%;
+        padding: 40px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .col-2 {
+        width: 33,3%;
+        padding: 40px;
+    }
+
+    .col-3 {
+        width: 33,3%;
+        padding: 40px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .col-1 button {
+        margin: 20px 20px 0px 0px;
+    }  
+
+    .col-2 button {
+        margin: 20px 20px 0px 0px;
+    } 
+    
+    .col-3 button {
+        margin: 20px 20px 0px 0px;
+    }  
+
 }
