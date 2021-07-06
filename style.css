@@ -30,6 +30,7 @@ body {
     width: 950px;
     height: 540px;
     margin: 200px;
+    flex-shrink: 0;
 }
 
 .content h1 {
@@ -144,10 +145,11 @@ img {
     background-color: var(--very-dark-cyan);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
     .content {
         flex-direction: column;
         margin: 100px 25px 100px 25px;
+        flex-shrink: 1;
     }
 
     .col-1 {
